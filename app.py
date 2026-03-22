@@ -2,9 +2,6 @@ from flask import Flask, jsonify
 from fetch import fetch
 
 app = Flask(__name__)
-
-fetch()
-
 @app.route("/")
 def health():
     return jsonify({"status": "running"})
